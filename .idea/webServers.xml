@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fac3e54d-bda9-4723-b594-51ff4646a182" name="testVIP" url="http://ds227.mirohost.net">
+        <fileTransfer host="ds227.mirohost.net" port="21" rootFolder="/test.shuvar.com" password="dfe2dffddfe0df9cdfe5df99dfcbdfeb" username="testE7">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

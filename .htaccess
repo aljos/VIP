@@ -1,0 +1,78 @@
+AddDefaultCharset 'utf-8'
+RewriteEngine on
+
+
+#RewriteBase /
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+RewriteRule ^main$ /?control=main
+
+
+RewriteRule ^catalog/([^/]+)$ /?control=catalog
+RewriteRule ^catalog$ /?control=catalog
+
+RewriteRule ^recipes$ /?control=recipe
+
+#RewriteRule ^project/([^/]+)$ /?control=project&action=oneProject&name=$1
+
+
+RewriteRule ^services$ /?control=services&type=producer
+RewriteRule ^services/producer$ /?control=services&type=producer
+RewriteRule ^services/provider$ /?control=services&type=provider
+RewriteRule ^services/horeca$ /?control=services&type=horeca
+RewriteRule ^services/renter$ /?control=services&type=renter
+RewriteRule ^services/retail$ /?control=services&type=retail
+RewriteRule ^services/career /?control=services&type=career
+
+
+RewriteRule ^scheme$ /?control=scheme&type=all
+RewriteRule ^scheme/([^/]+)$ /?control=scheme&type=$1
+RewriteRule ^scheme/getShop$ /?control=scheme&action=test
+
+
+RewriteRule ^registration$ /?control=register
+RewriteRule ^register/regCard$ /?control=register&action=regCard
+
+RewriteRule ^register/checkAutonumber$ /?control=register&action=checkAutonumber
+
+RewriteRule ^register/userRegistrstion$ /?control=register&action=userRegistrstion
+
+#RewriteRule ^register/confirm/([^/]+)$ /front.php?control=register&action=confirm&hash=$1
+#RewriteRule ^restore$ /front.php?control=register&action=restorePage
+#RewriteRule ^restore/send$ /front.php?control=register&action=restoreSend
+
+RewriteRule ^login$ /?control=register&action=login
+RewriteRule ^logout$ /?control=register&action=logout
+
+RewriteRule ^restore/send$ /?control=register&action=forgotPassword
+
+
+RewriteRule ^account$ /?control=account
+RewriteRule getUserInfo$ /?control=account&action=getUserInfo
+
+RewriteRule ^ajaxCheckAuth$ /?control=account&action=ajaxCheckAuth
+RewriteRule ^LiqPayStatus$ /?control=account&action=liqPayStatus
+
+
+RewriteRule ^news_all$ /?control=news
+RewriteRule ^news/([0-9]+)/([^/]+)$ /?control=news&action=oneNews&id=$1
+#RewriteRule ^news/([0-9]+)$ /front.php?control=news&id=$1
+
+
+RewriteRule ^events_all$ /?control=event
+RewriteRule ^event/([0-9]+)/([^/]+)$ /?control=event&action=oneEvent&id=$1
+
+
+
+RewriteRule ^mode=analitics&url=prices$ /redirectPrice.php
+
+
+
+
+
+
+ErrorDocument 404 /views/pages/404.html
+
+

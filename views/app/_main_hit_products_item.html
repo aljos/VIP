@@ -1,0 +1,45 @@
+<div class="col-lg-2">
+    <div class="carousel-item">
+        <div class="img-wrapper">
+            <div class="carousel-item-img"
+                 style="background-image: url('http://vip.shuvar.com/images/wares/small/{photo}')"></div>
+
+        </div>
+        <div class="carousel-item-name"><span>{name}</span>
+
+
+        </div>
+
+
+        <div class="carousel-item-to-order">
+
+            <div class="carousel-item-price">{price}<span> грн<hr>{unit}</span></div>
+
+            <span class="counter">
+                <input type="text" data-unit='{unit}' data-min-weight='{min_weight}' id='qty-{id}' value="{min_weight}"
+                       onkeypress="return CheckNumb(event)"/>
+                <div class="input-number-buttons">
+                    <span class="plus" onclick="changeWareQtyPlus({id})">+</span>
+                    <span class="minus" onclick="changeWareQtyMinus({id})">-</span>
+                </div>
+			</span>
+
+            <div class="carousel-item-to-order-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+
+
+</style>
+<g>
+	<path d="M15,32.8h27.7c3.1,0,5.5-2.5,5.5-5.5V15.6c0-0.7-0.6-1.2-1.2-1.2s-1.2,0.6-1.2,1.2v11.7c0,1.7-1.4,3.1-3.1,3.1   H15c-1.7,0-3.1-1.4-3.1-3.1v-6.9v-7.7v-1V4.5c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0,0   c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0   c0,0,0,0-0.1-0.1c0,0,0,0,0,0c0,0,0,0-0.1-0.1c0,0,0,0,0,0c0,0,0,0-0.1-0.1c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0-0.1,0-0.1-0.1L3.5,0.1   c-0.6-0.3-1.4,0-1.6,0.7s0,1.4,0.7,1.6l6.9,2.9v6.4v1v7.7v6.9V36c0,2.9,2.2,5.3,5.1,5.5c-0.6,0.9-0.9,1.9-0.9,3   c0,3,2.5,5.5,5.5,5.5s5.5-2.5,5.5-5.5c0-1.1-0.3-2.1-0.9-3h13.1c-0.6,0.9-0.9,1.9-0.9,3c0,3,2.5,5.5,5.5,5.5c3,0,5.5-2.5,5.5-5.5   c0-3-2.5-5.5-5.5-5.5H15c-1.7,0-3.1-1.4-3.1-3.1v-4.1C12.8,32.5,13.8,32.8,15,32.8z M22.1,44.5c0,1.7-1.4,3-3,3c-1.7,0-3-1.4-3-3   s1.4-3,3-3C20.7,41.5,22.1,42.9,22.1,44.5z M44.3,44.5c0,1.7-1.4,3-3,3s-3-1.4-3-3s1.4-3,3-3S44.3,42.9,44.3,44.5z"></path>
+
+</g>
+</svg>
+                <span>Замовити</span>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
